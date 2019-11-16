@@ -1,0 +1,35 @@
+Gym
+-
+gym_id INT PK
+gym_name VARCHAR
+address VARCHAR
+city VARCHAR
+state VARCHAR
+zipcode INT
+
+Trainers
+-
+trainer_id INT PK
+gym_id INT FK >- Gym.gym_id
+last_name VARCHAR
+first_name VARCHAR
+
+Members
+-
+member_id INT PK
+payment_id INT FK - Payments.payment_id
+trainer_id INT FK >- Trainers.trainer_id
+gym_id INT FK >- Gym.gym_id
+last_name VARCHAR
+first_name VARCHAR
+address VARCHAR
+city VARCHAR
+state VARCHAR
+zipcode INT
+phone VARCHAR
+
+Payments
+-
+payment_id INT PK
+member_id INT FK - Members.member_id
+card_number VARCHAR
