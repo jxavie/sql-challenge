@@ -7,12 +7,11 @@ SELECT * FROM salaries;
 SELECT * FROM titles;
 
 
--- 1. List detailing employee number, last name, first name, gender an salary for each employee:
+-- 1. List detailing employee number, last name, first name, gender and salary for each employee:
 SELECT
 	e.emp_no
-	,e.birth_date
-	,e.first_name
 	,e.last_name
+	,e.first_name
 	,e.gender
 	,s.salary
 FROM
@@ -37,8 +36,8 @@ WHERE
 -- 3. List detailing the following for the manager of each department:
 --         department number and name, manager's employee number, last and first names, and start and end employment dates
 SELECT
-	d.dept_name
-	,d.dept_no
+	d.dept_no
+	,d.dept_name
 	,dm.emp_no
 	,e.last_name
 	,e.first_name

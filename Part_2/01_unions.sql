@@ -20,7 +20,7 @@ DROP VIEW IF EXISTS all_parties;
 -- 2. Create view that returns first and last names of all actors, customers and staff
 CREATE VIEW all_parties AS
 	SELECT 
-		'actor' AS actor
+		'actor' AS record_type
 		,last_name
 		,first_name
 	FROM actor	
@@ -37,12 +37,12 @@ CREATE VIEW all_parties AS
 		,first_name
 	FROM staff
 	ORDER BY 
-		last_name,
-		first_name;
+		last_name
+		,first_name;
 
 
 -- 3. Display View
-SELECT * FROM all_parties LIMIT 100;
+SELECT * FROM all_parties;
 
 
 -- 4. Determine number of customer entries from the customer and customer_list tables
@@ -76,7 +76,7 @@ CREATE VIEW customer_combined AS
 
 
 -- 7. Display View
-SELECT * FROM customer_combined
+SELECT * FROM customer_combined;
 
 
 -- 8. Determine total customer count and unique number of customers.

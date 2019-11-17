@@ -2,7 +2,7 @@
 
 
 -- Part 1: Explain the difference between alter and update in SQL statements
--- ALTER is used to change a table.  For example, it can be used to add, delete, and/or modify columns.  It can also be used to add and/or constraints.
+-- ALTER is used to change a table.  For example, it can be used to add, delete, and/or modify columns.  It can also be used to add and/or remove constraints.
 -- UPDATE, on the other hand, is used to modify records in a table.  For example, it can be used to change the value of a cell.
 
 
